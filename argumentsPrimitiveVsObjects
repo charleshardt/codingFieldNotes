@@ -1,0 +1,28 @@
+/**
+ * Lecture 129: How Passing Arguments Works
+ *
+ * Primitive values vs. objects
+ */
+
+const flight = 'LH234';
+
+const charles = {
+  name: 'Charles Hardt',
+  passport: 2892398,
+};
+
+const checkIn = function (flightNum, passenger) {
+  flightNum = 'LH999';
+  passenger.name = 'Mr. ' + passenger.name;
+
+  // if (passenger.passport === 2892398) {
+  //   console.log('Checked in');
+  // } else {
+  //   console.log('Wrong passport!');
+  // }
+};
+
+// checkIn(flight, charles);
+console.log(flight);
+console.log(charles);
+
