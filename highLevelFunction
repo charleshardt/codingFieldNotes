@@ -24,4 +24,4 @@ const textTransform = function (str, fn) {
 
 // Go get it!
 textTransform('Yay_Javascript_is_adequate!', removeUnderscores);
-textTransform('javAscRiPt is so above average!', upperFirstWord);
+textTransform('gO where you are treated best!', upperFirstWord);
