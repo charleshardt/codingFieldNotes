@@ -1,0 +1,5 @@
+// My solution to check if a string is a palindrome
+
+const checkPalindrome = function (x) {
+  return x.toLowerCase() === x.toLowerCase().split('').reverse().join('');
+};
