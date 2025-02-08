@@ -1,0 +1,40 @@
+/**
+ * LECTURE 39: Introduction to Arrays
+ *
+ *
+ */
+
+/* Literal Syntax */
+const friends = ["Fr. Jonathan", "Jeff Davis", "Glenn Basham"];
+
+/* Array Function */
+const numbers = new Array(194, 20230, 1945);
+
+/* Retrieve the last element in an array */
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+const nickname = ["Charlie"];
+
+/* Arrays can contain variables, expressions, other arrays, etc. */
+const hardt = [nickname, 2023 - 1977, "captain", friends];
+console.log(hardt);
+
+/* Show the usefulness of arrays */
+const calcAge = function (birthYear) {
+  return 2023 - birthYear;
+};
+const years = [1991, 1977, 1972, 1950, 1951];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+/* Put them all together in an array. */
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
