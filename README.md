@@ -5,7 +5,7 @@ These "field notes" accomplish two things:
 
 ## My Learning Path
 ### Courses
-At the beginning of the lockdowns in 2020, I worked through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/). Now that the dust has settled, I have settled into the following path to finally become a front end web developer focusing on React.
+At the beginning of the lockdowns in 2020, I worked through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/). Then circumstances thrust me into the maritime industry where I have worked as a captain for a number of years. Now that the dust has settled, I have settled into the following path to finally become a front end web developer focusing on React.
 
 - [The Complete JavaScript Course 2023](https://www.udemy.com/course-dashboard-redirect/?course_id=851712)
 - [JavaScript Understanding the Weird Parts](https://www.udemy.com/course-dashboard-redirect/?course_id=364426)
