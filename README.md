@@ -3,8 +3,9 @@ These "field notes" accomplish two things:
 - documentation of my coding learning path
 - a place for me to organize my notes
 
-## My Path
-I have settled on the following learning path to ultimately become a front end developer focusing on React.
+## My Learning Path
+### Courses
+At the beginning of the lockdowns in 2020, I worked through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/). Since then, I have settled into the following learning path to become a web developer focusing on React.
 
 - [The Complete JavaScript Course 2023](https://www.udemy.com/course-dashboard-redirect/?course_id=851712)
 - [JavaScript Understanding the Weird Parts](https://www.udemy.com/course-dashboard-redirect/?course_id=364426)
@@ -15,6 +16,9 @@ I have settled on the following learning path to ultimately become a front end d
 - [React the Complete Guide](https://www.udemy.com/course-dashboard-redirect/?course_id=1362070)
 - [Modern React with Redux](https://www.udemy.com/course-dashboard-redirect/?course_id=705264)
 	- [AI for Developers](https://www.udemy.com/course-dashboard-redirect/?course_id=6250531)
- - I am not beginning this at the start as I am not completely new to jS. Pretty new, though: I'm definitely a fledgling nerd. I finished [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/) during the lockdowns. I am 35% done with [The Jonas Schmedtmann Complete JavaScript Course 2024: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/). Next up is [Anthony Alicea JavaScript: Understanding the Weird Parts](https://www.udemy.com/course/understand-javascript/).
 
-Then on to React...
+### Other Practices and Resources
+- [Codewars](https://www.codewars.com/dashboard)
+- [Grokking Algorithms](https://www.amazon.com/dp/1633438538).
+- [Cracking the Code Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?sr=8-1).
+- [Leetcode](https://leetcode.com/)
