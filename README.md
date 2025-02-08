@@ -1,7 +1,7 @@
 # codingFieldNotes
 These "field notes" accomplish two things:
-- documentation of my coding learning path
 - a place for me to organize my notes
+- documentation of my coding learning path
 
 ## My Learning Path
 ### Courses
