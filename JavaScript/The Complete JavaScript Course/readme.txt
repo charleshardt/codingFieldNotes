@@ -1,1 +1,4 @@
-This course makes me want to move to Portugal.
+#About
+Rating: 4.7 (219,283 ratings)
+Students: 969,410
+Hours: 71
