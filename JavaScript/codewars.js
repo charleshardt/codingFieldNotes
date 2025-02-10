@@ -7,7 +7,7 @@
 //////////////////////////////////////////////////////////////////////////
 
 /**
- * 8 kyu: Calculate average
+ * Calculate average: 8 kyu
  *
  * Kata: Write a function which calculates the average of
  * the numbers in a given array. Empty arrays should
@@ -84,7 +84,7 @@ const checkPalindrome = function (x) {
 //////////////////////////////////////////////////////////////////////////
 
 /**
- * 8 kyu: Parse nice int from char problem
+ * Parse nice int from char problem: 8 kyu
  *
  * Kata: You ask a small girl,"How old are you?" She always
  * says, "x years old", where x is a random number between
@@ -105,8 +105,8 @@ console.log(getAge("2 years old."));
 //////////////////////////////////////////////////////////////////////////
 
 /**
- * 8 kyu: Exclamation marks series #1:  
- * Remove an exclamation mark from the end of string
+ * Exclamation marks series #1:  
+ * Remove an exclamation mark from the end of string: 8 kyu
  *
  * Kata: Remove an exclamation mark from the end of a string. For a 
  * beginner kata, you can assume that the input data is always a string, 
