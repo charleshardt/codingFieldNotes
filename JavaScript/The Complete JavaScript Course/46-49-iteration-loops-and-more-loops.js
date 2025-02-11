@@ -1,6 +1,8 @@
 /**
- * Lesson 46-47. Iteration: The for Loop, Arrays,
- * Breaking and Continuing
+ * Lesson 46-49. Iteration: The for Loop, Arrays,
+ * Breaking and Continuing, Looping Backwards,
+ * Loops inside loops, the while Loop
+ *
  */
 
 /* A for Loop is a loop with a counter */
@@ -61,3 +63,58 @@ for (let i = 0; i < fbiFileCharlie.length; i++) {
   if (typeof fbiFileCharlie[i] === "number") break;
   console.log(fbiFileCharlie[i], typeof fbiFileCharlie[i]);
 }
+////////////////////////////////////////////////////////////////
+
+const bruce = [
+  "Bruce",
+  "Morris",
+  "Mack",
+  2025 - 1995,
+  "wealth manager",
+  [
+    "mysogenist",
+    "Nazi",
+    "white supremecist",
+    "grandma killer",
+    "puppy hater",
+    "all around good guy",
+  ],
+];
+
+/* Backwards loop because...no reason. */
+console.log(`\nDisplaying an array backwards for no reason.`);
+for (let i = bruce.length - 1; i >= 0; i--) {
+  console.log(i, bruce[i]);
+}
+
+/* A Loop within a Loop */
+console.log(`\nHoly mackerel, a loop inside a loop! 3 sets of 5!`);
+for (let set = 1; set < 4; set++) {
+  console.log(`----------------Starting set ${set}`);
+
+  for (let rep = 1; rep <= 5; rep++) {
+    console.log(`Getting up rep ${rep}`);
+  }
+}
+
+/* While loops are more versatile than for loops. We used a 
+counter in this case, but they only need the condition to work. */
+console.log(`\nHere's a while loop for more fun!`);
+let rep = 1;
+while (rep <= 4) {
+  console.log(`Getting up rep ${rep}`);
+  rep++;
+}
+console.log(`mrrrr, fuggit...`);
+
+/* Here's one that doesn't need a counter. */
+console.log(`\nIf you roll a 6, all your wildest dreams will come true...`);
+let dice = Math.trunc(Math.random() * 6) + 1;
+if (dice === 6) console.log(`A 6 on your first try...los santos favor you.`);
+
+while (dice !== 6) {
+  console.log(`No, wey, that was a ${dice}...`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`Okay bro, you finally rolled a 6...`);
+}
+////////////////////////////////////////////////////////////////
