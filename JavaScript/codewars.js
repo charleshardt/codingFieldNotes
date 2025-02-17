@@ -121,5 +121,39 @@ console.log(remove("Hi!"));
 console.log(remove("!Hi"));
 //////////////////////////////////////////////////////////////////////////
 
+/** 
+ * Find the stray number
 
+ * Kata: You are given an odd-length array of integers, in
+ * which all of them are the same, except for one single number.
+ *
+ * Complete the method which accepts such an array, and returns
+ * that single different number.
+ *
+ * The input array will always be valid! (odd-length >= 3)
+ */
 
+// const numbers = [1, 2, 2]; // Test data
+// const numbers = [2, 1, 2];
+// const numbers = [2, 2, 1];
+// const numbers = [2, 2, 2, 2, 1, 2, 2];
+
+const stray = numbers => {
+  const [a, b, c] = numbers;
+  const ordinary =
+    a === b // which number is the ordinary one?
+      ? b
+      : b === c || a === c
+      ? c
+      : 'You have died of dysentery'; // careful
+
+  // which number is not ordinary?
+  for (const element of numbers) {
+    if (element !== ordinary) {
+      return element;
+    }
+  }
+};
+
+console.log(numbers + '\nThe stray number is: ' + stray(numbers));
+//////////////////////////////////////////////////////////////////////////
