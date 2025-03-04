@@ -35,7 +35,7 @@ main {
 .left {
   width: 52rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -68,16 +68,19 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+  transition: all 0.3s ease-in-out;
 }
 
 .between {
   font-size: 1.4rem;
+  line-height: 1.4rem;
   position: absolute;
   top: 2rem;
   left: 2rem;
 }
 
 .again {
+  line-height: 1.4rem;
   border-radius: 15rem;
   position: absolute;
   top: 2rem;
@@ -98,17 +101,17 @@ h1 {
   margin-bottom: 3rem;
 }
 .guess {
-  background: none;
+  background-color: #222;
   border: 4px solid #eee;
-  border-radius: 15rem;
-  font-family: inherit;
+  border-radius: 15rem 0 0 15rem;
   color: inherit;
+  font-family: inherit;
   font-size: 5rem;
-  padding: 2.5rem;
+  height: 10rem;
+  padding: 2rem 4rem;
   width: 25rem;
   text-align: center;
   display: block;
-  margin-bottom: 3rem;
 }
 
 .btn {
@@ -118,12 +121,27 @@ h1 {
   color: #222;
   font-size: 2rem;
   font-family: inherit;
-  padding: 2rem 3rem;
+  padding: 2rem;
   cursor: pointer;
 }
 
 .btn:hover {
   background-color: #eee;
+}
+
+.btn:active {
+  background-color: #fff;
+}
+
+.check {
+  border: 4px solid #eee;
+  border-radius: 0 15rem 15rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  height: 10rem;
+  margin-left: 10px;
+  padding: 2rem 4rem;
 }
 
 .message {
@@ -133,4 +151,19 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+input:focus,
+button:focus {
+  box-shadow: 0px 0px 10px 0.1rem #eee;
+}
+
+/* Hide input box arrows from Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Hide input box arrows from Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
