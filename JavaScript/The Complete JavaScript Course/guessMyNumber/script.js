@@ -1,84 +1,110 @@
 'use strict';
 
-let upperLimit = document.querySelector('.upper-limit').value;
-const randomNumber = () => Math.trunc(Math.random() * upperLimit) + 1;
-let secretNumber = randomNumber();
+/*
+console.log(document.querySelector('.message').textContent);
+document.querySelector('.message').textContent = '🎉 Correct Number!';
 
-// Variables
+document.querySelector('.number').textContent = 13;
+document.querySelector('.score').textContent = 10;
+
+document.querySelector('.guess').value = 23;
+console.log(document.querySelector('.guess').value);
+*/
+
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
-let highScore = 0;
-let guess = document.querySelector('.guess').value;
+let highscore = 0;
 
-const theMessage = function (message) {
+const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
-const theGuess = function (guess) {
-  document.querySelector('.guess').value = guess;
-};
-
-document.querySelector('.highscore').textContent = highScore;
-document.querySelector('.score').textContent = score;
-document.querySelector('.number').textContent = '?';
-
-// Allow users to change upper limit.
-document.querySelector('.upper-limit').addEventListener('change', function () {
-  upperLimit = this.value;
-});
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
+  console.log(guess, typeof guess);
 
-  // When there is no input.
+  // When there is no input
   if (!guess) {
-    theMessage('⛔ Gee whiz, enter a number, yo...');
+    // document.querySelector('.message').textContent = '⛔️ No number!';
+    displayMessage('⛔️ No number!');
 
-    // When guess is right
+    // When player wins
   } else if (guess === secretNumber) {
-    // Player wins
+    // document.querySelector('.message').textContent = '🎉 Correct Number!';
+    displayMessage('🎉 Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
-    theMessage('🔥 NAILED it! 🔥');
 
-    // Check if this is the highest score to date
-    if (score > highScore) highScore = score;
-    document.querySelector('body').style.backgroundColor = '#171717 ';
-    document.querySelector('.guess').style.border = '4px #FCE100 solid';
-    document.querySelector('.highscore').textContent = highScore;
-    document.querySelector('.message').style.fontSize = '3rem';
-    document.querySelector('.number').style.border = '20px #FCE100 solid';
-    document.querySelector('.number').style.width = '40rem';
-    document.querySelector('.number').style.color = '#F7630C ';
-    document.querySelector('.number').style.border = '15px #FCE100solid';
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
+
+    if (score > highscore) {
+      highscore = score;
+      document.querySelector('.highscore').textContent = highscore;
+    }
 
     // When guess is wrong
-  } else {
+  } else if (guess !== secretNumber) {
     if (score > 1) {
-      guess > secretNumber
-        ? theMessage("👇 You're too HIGH")
-        : theMessage("👆 You're too LOW");
+      // document.querySelector('.message').textContent =
+      // guess > secretNumber ? '📈 Too high!' : '📉 Too low!';
+      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
       score--;
       document.querySelector('.score').textContent = score;
     } else {
+      // document.querySelector('.message').textContent = '💥 You lost the game!';
+      displayMessage('💥 You lost the game!');
       document.querySelector('.score').textContent = 0;
-      theMessage('You have died of Dysentery.');
     }
   }
+
+  //   // When guess is too high
+  // } else if (guess > secretNumber) {
+  //   if (score > 1) {
+  //     document.querySelector('.message').textContent = '📈 Too high!';
+  //     score--;
+  //     document.querySelector('.score').textContent = score;
+  //   } else {
+  //     document.querySelector('.message').textContent = '💥 You lost the game!';
+  //     document.querySelector('.score').textContent = 0;
+  //   }
+
+  //   // When guess is too low
+  // } else if (guess < secretNumber) {
+  //   if (score > 1) {
+  //     document.querySelector('.message').textContent = '📉 Too low!';
+  //     score--;
+  //     document.querySelector('.score').textContent = score;
+  //   } else {
+  //     document.querySelector('.message').textContent = '💥 You lost the game!';
+  //     document.querySelector('.score').textContent = 0;
+  //   }
+  // }
 });
 
 document.querySelector('.again').addEventListener('click', function () {
-  // Reset values
-  score = 20; // score is a state variable
-  secretNumber = randomNumber();
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-  // Reset message, score, number, and guess
-  theMessage('Start guessing, Bucko...');
+  // document.querySelector('.message').textContent = 'Start guessing...';
+  displayMessage('Start guessing...');
   document.querySelector('.score').textContent = score;
   document.querySelector('.number').textContent = '?';
-  theGuess('');
+  document.querySelector('.guess').value = '';
 
-  // Reset body background color
-  document.querySelector('body').style.backgroundColor = '#111';
-  document.querySelector('.number').style.border = '20px #333 solid';
-  document.querySelector('.guess').style.border = '4px #eee solid';
-  document.querySelector('.number').style.width = '20rem';
-  document.querySelector('.number').style.color = '#333 ';
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').style.width = '15rem';
 });
+
+///////////////////////////////////////
+// Coding Challenge #1
+
+/* 
+Implement a game rest functionality, so that the player can make a new guess! Here is how:
+
+1. Select the element with the 'again' class and attach a click event handler
+2. In the handler function, restore initial values of the score and secretNumber variables
+3. Restore the initial conditions of the message, number, score and guess input field
+4. Also restore the original background color (#222) and number width (15rem)
+
+GOOD LUCK 😀
+*/
