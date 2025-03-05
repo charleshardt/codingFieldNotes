@@ -146,6 +146,22 @@ h1 {
   display: block;
 }
 
+.nudge {
+  animation: nudge 0.25s linear;
+}
+
+@keyframes nudge {
+  0% {
+    transform: rotate(-4deg);
+  }
+  33% {
+    transform: rotate(4deg);
+  }
+  66% {
+    transform: rotate(-4deg);
+  }
+}
+
 .btn {
   border: none;
   background-color: #ccc;
