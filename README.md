@@ -4,7 +4,7 @@ These field notes:
 2. document my learning path
 
 ## Where I Came From
-In 2020, when I was at the height of my powers as a concert violinist, the world shut down and they tried to lock us in our homes. I escaped into the world of web development, winding through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/). In 2021, the bastards wouldn't let me go back to playing the violin because I wouldn't take their damn experimental shots. So I shook the dust off my sandals and dove into the maritime industry, where I worked as a commercial captain for a number of years. Now that the dust is settled there, I am returning to my original plan and steering a course towards frontend web development.
+In 2020, when I was at the height of my powers as a concert violinist, the world shut down and they tried to lock us in our homes. I escaped, winding through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/). In 2021, the bastards wouldn't let me go back to playing the violin because I wouldn't take their damn experimental shots. So I shook the dust off my sandals and dove into the maritime industry, where I worked as a commercial captain for some years. Now that the dust is settled there, I am returning to my original plan and steering a true course towards frontend web development.
 
 ## My Path
 ### Coursework
