@@ -78,6 +78,7 @@ submitButton.addEventListener('click', function () {
 
     // Player guesses wrong.
   } else {
+    nudge(messageBox);
     if (score > 1) {
       guess > secretNumber
         ? displayMessage("👇 You're too HIGH")
