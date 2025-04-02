@@ -19,12 +19,10 @@ const transformer = function (str, fn) {
   console.log(`Transformed by callback: ${fn.name}`);
 };
 transformer('Javascript is neat.', upperFirstWord);
-transformer('Javascript is cool.', oneWord);
+transformer('Javascript is lit.', oneWord);
 
 // Js uses callbacks all the time
-const high5 = function () {
-  console.log('👋');
-};
+const high5 = () => console.log('👋');
 document.body.addEventListener('click', high5);
 ['Charlie', 'Elke', 'Edward', 'Darleen'].forEach(high5);
 
