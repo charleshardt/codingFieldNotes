@@ -168,8 +168,8 @@ console.log(numbers + '\nThe stray number is: ' + stray(numbers));
  * 'word'   =>  'drow'
  */
 
-const solution = (str) => [...str].reverse().join("");
-console.log(solution("5tep on no petS"))
+const solution = (str) => [...str].reverse().join('');
+console.log(solution(`5tep on no petS`))
 
 // Doesn't work on palindromes :(
 // `Mr. Owl ate my metal worm`
