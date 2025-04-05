@@ -157,3 +157,21 @@ const stray = numbers => {
 
 console.log(numbers + '\nThe stray number is: ' + stray(numbers));
 //////////////////////////////////////////////////////////////////////////
+
+/** 
+ * Reversed Strings
+
+ * Kata: Complete the solution so that it reverses the string 
+ * passed into it.
+ *
+ * 'world'  =>  'dlrow'
+ * 'word'   =>  'drow'
+ */
+
+const solution = (str) => [...str].reverse().join("");
+console.log(solution("5tep on no petS"))
+
+// Doesn't work on palindromes :(
+// `Mr. Owl ate my metal worm`
+// `Was it a car or a cat I saw`
+// `Do geese see God?`
