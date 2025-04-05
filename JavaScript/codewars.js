@@ -169,9 +169,9 @@ console.log(numbers + '\nThe stray number is: ' + stray(numbers));
  */
 
 const solution = (str) => [...str].reverse().join('');
-console.log(solution(`5tep on no petS`))
+console.log(solution(`step on no pets`))
 
-// Doesn't work on palindromes :(
-// `Mr. Owl ate my metal worm`
-// `Was it a car or a cat I saw`
-// `Do geese see God?`
+// Works on most palindromes :)
+// `amanaP ,lanac a ,nalp a ,nam A`
+// `was I tac a ro rac a ti saW`
+// `?doG ees eseeg oD`
