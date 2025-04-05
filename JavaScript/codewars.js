@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////
 /**
- * Codewars: A Kronicle of Kata I have k-nown and pwned.
+ * Codewars: A Kronicle of Kata I have k-nnnnown and pwned.
  *
  * 
  */
