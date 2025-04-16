@@ -8,15 +8,12 @@ In 2020, when I was at the height of my powers as a concert violinist, the world
 
 ## My Path
 ### Coursework
-- [The Complete JavaScript Course 2023](https://www.udemy.com/course-dashboard-redirect/?course_id=851712)
-- [JavaScript Understanding the Weird Parts](https://www.udemy.com/course-dashboard-redirect/?course_id=364426)
-	- [Github course](https://www.udemy.com/course-dashboard-redirect/?course_id=4188320)
-	- [Secure Shell Essentials](https://www.udemy.com/course-dashboard-redirect/?course_id=1735124)
-- [Advanced CSS and Sass](https://www.udemy.com/course-dashboard-redirect/?course_id=1026604)
-	- [Clean Code](https://www.udemy.com/course-dashboard-redirect/?course_id=3611296)
-- [React the Complete Guide](https://www.udemy.com/course-dashboard-redirect/?course_id=1362070)
-- [Modern React with Redux](https://www.udemy.com/course-dashboard-redirect/?course_id=705264)
-	- [AI for Developers](https://www.udemy.com/course-dashboard-redirect/?course_id=6250531)
+# Main Path
+- [ ] 71h Course: [Schmedtmann: The Complete JavaScript Course 2023](https://www.udemy.com/course-dashboard-redirect/?course_id=851712)
+- [ ] 12h Course: [Alicea: JavaScript Understanding the Weird Parts](https://www.udemy.com/course-dashboard-redirect/?course_id=364426)
+- [ ] Book: [Eloquent JavaScript](https://eloquentjavascript.net/)
+- [ ] 28h Course: [Schmedtmann: Advanced CSS and Sass](https://www.udemy.com/course-dashboard-redirect/?course_id=1026604)
+- [ ] 84h Course: [Schmedtmann: The Ultimate React Course 2025: React, Next.js, Redux & More](https://www.udemy.com/course-dashboard-redirect/?course_id=4471614)
 
 ### Other Practices
 - [Codewars](https://www.codewars.com/dashboard)
