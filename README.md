@@ -6,10 +6,8 @@ These field notes:
 ## Where I Came From
 In 2020, when I was at the height of my powers as a concert violinist, the world shut down and they tried to lock us in our homes. I escaped, winding through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/). In 2021, the bastards wouldn't let me go back to playing the violin because I wouldn't take their damn experimental shots. So I shook the dust off my sandals and dove into the maritime industry, where I worked as a commercial captain for some years. Now that the dust is settled there, I am returning to my original plan and steering a true course towards frontend web development.
 
-## My Path
-### Coursework
-# Main Path
-- [ ] 71h Course: [Schmedtmann: The Complete JavaScript Course 2023](https://www.udemy.com/course-dashboard-redirect/?course_id=851712)
+## My Main Path
+- [x] 71h Course: [Schmedtmann: The Complete JavaScript Course 2023](https://www.udemy.com/course-dashboard-redirect/?course_id=851712)
 - [ ] 12h Course: [Alicea: JavaScript Understanding the Weird Parts](https://www.udemy.com/course-dashboard-redirect/?course_id=364426)
 - [ ] Book: [Eloquent JavaScript](https://eloquentjavascript.net/)
 - [ ] 28h Course: [Schmedtmann: Advanced CSS and Sass](https://www.udemy.com/course-dashboard-redirect/?course_id=1026604)
