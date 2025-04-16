@@ -25,3 +25,14 @@ console.log('for-of:', balanceFor);
 const balanceArrow = movements.reduce((acc, cur) => acc + cur, 0);
 
 console.log('arrow:', balanceArrow);
+
+// reduce() does more than adding up boring stuff. It is the most powerful array method and can do many things.
+
+// Get the maximum value
+// Always: "What is the purpose of acc?"
+const maxMovement = movements.reduce(
+  (acc, curr) => (acc > curr ? acc : curr),
+  movements.at(0)
+);
+
+console.log(movements, maxMovement);
