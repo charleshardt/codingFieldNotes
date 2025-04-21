@@ -36,7 +36,7 @@ const calcAverageHumanAge = function (ages) {
   console.log(`Only adults no babys:`, dogsOver18);
 
   const avgAdultAge =
-    dogsOver18.reduce((acc, cur) => acc + cur, 0) / dogsOver18.length;
+    dogsOver18.reduce((acc, cur, i, arr) => acc + cur/arr.length, 0);
   console.log(`Avg hooman age of adult doges:`, avgAdultAge);
   console.log(`lol
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠋⠈⠙⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠤⢤⡀⠀⠀
