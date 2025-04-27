@@ -29,6 +29,8 @@ console.log(y);
 const z = Array.from({ length: 7 }, (_, i) => i + 1); // callback is the same as map method. Underscore is convention for throwaway variable (current).
 console.log(z);
 
+/*
+// Example applied to Bankist app
 labelBalance.addEventListener('click', () => {
   const movementsUI = Array.from(
     document.querySelectorAll('.movements__value'),
@@ -38,3 +40,4 @@ labelBalance.addEventListener('click', () => {
 
   const movementsUI2 = [...document.querySelectorAll('.movements__value')]; // This can create an array, too, but the mapping function would have to be done separately.
 });
+*/
