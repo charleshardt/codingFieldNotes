@@ -13,7 +13,7 @@ const isEven = n => n % 2 === 0;
 const isOdd = n => n % 2 === 1;
 
 
-// Let's play with the rows of our bankist transaction movements
+// Use Case: Let's play with the rows of our bankist transaction movements
 // const getMovRows = document
 //   .querySelector('.logo') // must do after logging in
 //   .addEventListener('click', () => {
