@@ -1,4 +1,5 @@
-# The Complete JavaScript Course 2025: From Zero to Expert!
+# Course Notes for the Schmedtmann Complete JavaScript Course 2025
+- Course: The Complete JavaScript Course 2025: From Zero to Expert!
 - URL: https://www.udemy.com/course/the-complete-javascript-course/
 - Teacher: Jonas Schmedtmann
 - Rating: 4.7 (219,283 ratings)
