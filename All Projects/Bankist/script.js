@@ -15,13 +15,13 @@ const account1 = {
 
   movementsDates: [
     '2024-11-18T21:31:17.178Z',
-    '2024-12-23T07:42:02.383Z',
     '2025-01-28T09:15:04.904Z',
-    '2025-02-01T10:17:24.185Z',
-    '2025-02-08T14:11:59.604Z',
-    '2025-03-27T17:01:17.194Z',
-    '2025-04-11T23:36:17.929Z',
-    '2025-04-12T10:51:36.790Z',
+    '2025-04-24T10:17:24.185Z',
+    '2025-04-26T14:11:59.604Z',
+    '2025-04-29T17:01:17.194Z',
+    '2025-04-29T23:36:17.929Z',
+    '2025-04-30T10:51:36.790Z',
+    '2025-05-01T07:42:02.383Z',
   ],
   currency: 'EUR',
   locale: 'pt-PT', // de-DE
@@ -139,6 +139,21 @@ const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
 // Display the transaction movements
+const formatMovementDate = function (date) {
+  const calcDaysPassed = (date1, date2) =>
+    Math.floor(Math.abs((date2 - date1) / (1000 * 60 * 60 * 24)));
+  const daysPassed = calcDaysPassed(new Date(), date);
+
+  if (daysPassed === 0) return 'Today';
+  if (daysPassed === 1) return 'Yesterday';
+  if (daysPassed <= 2) return `${daysPassed} days ago`;
+
+  const month = `${date.getMonth() + 1}`.padStart(2, 0);
+  const day = `${date.getDate()}`.padStart(2, 0);
+  const year = date.getFullYear();
+  return `${month}/${day}/${year}`;
+};
+
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
@@ -147,19 +162,14 @@ const displayMovements = function (acc, sort = false) {
     movement: mov,
     movementDate: acc.movementsDates.at(i),
   }));
-  console.log(combinedMovsDates);
 
   if (sort) combinedMovsDates.sort((a, b) => a.movement - b.movement);
 
   combinedMovsDates.forEach(function (obj, i) {
     const { movement, movementDate } = obj;
     const type = movement > 0 ? 'deposit' : 'withdrawal';
-
     const date = new Date(movementDate);
-    const month = `${date.getMonth() + 1}`.padStart(2, 0);
-    const day = `${date.getDate()}`.padStart(2, 0);
-    const year = date.getFullYear();
-    const displayDate = `${month}-${day}-${year}`;
+    const displayDate = formatMovementDate(date);
 
     const html = `
     
