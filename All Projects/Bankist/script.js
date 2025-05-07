@@ -261,19 +261,45 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
-// Event handlers
-let currentAccount;
+const startLogoutTimer = function () {
+  const tick = function () {
+    const min = String(Math.floor(logoutTime / 60)).padStart(2, '0');
+    const sec = String(logoutTime % 60).padStart(2, '0');
 
-// ALWAYS LOGGED IN
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
-labelWelcome.textContent = `Hejre, Medve!`;
+    // In each call, print the remaining time to UI
+    labelTimer.textContent = `${min}:${sec}`;
+
+    // When 0, stop timer, logout user
+    if (logoutTime === 0) {
+      clearInterval(timer);
+      containerApp.style.opacity = 0;
+      labelWelcome.textContent = `Log in to get started`;
+    }
+
+    // Decrease 1 sec.
+    logoutTime--;
+  };
+  // Set time to 5 minutes
+  let logoutTime = 300; // develop with 100 sec.
+
+  // Call the timer every second
+  tick();
+  const timer = setInterval(tick, 1000);
+  return timer;
+};
+
+/////////////////////////////////////////////////
+// Event handlers
+let currentAccount, timer;
+
+// // ALWAYS LOGGED IN
+// currentAccount = account1;
+// updateUI(currentAccount);
+// containerApp.style.opacity = 100;
+// labelWelcome.textContent = `Hejre, Medve!`;
 
 btnLogin.addEventListener('click', function (e) {
-  // prevent form from submitting
-  e.preventDefault(); // pretty common
-  // Also, hitting enter in any of the form fields will trigger the 'click' event
+  e.preventDefault(); // prevent form from submitting
 
   currentAccount = accounts.find(
     acc => acc.username === inputLoginUsername.value
@@ -307,6 +333,10 @@ btnLogin.addEventListener('click', function (e) {
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
 
+    // Clear any running timers and begin logout timer
+    if (timer) clearInterval(timer);
+    timer = startLogoutTimer();
+
     // Update UI
     updateUI(currentAccount);
   }
@@ -338,6 +368,10 @@ btnTransfer.addEventListener('click', function (e) {
 
     // Update UI
     updateUI(currentAccount);
+
+    // Restart timer
+    clearInterval(timer);
+    timer = startLogoutTimer();
   }
 });
 
@@ -348,14 +382,20 @@ btnLoan.addEventListener('click', function (e) {
   const amount = Math.floor(inputLoanAmount.value);
 
   if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
-    // Add movement
-    currentAccount.movements.push(amount);
+    setTimeout(function () {
+      // Add movement
+      currentAccount.movements.push(amount);
 
-    // Add movement date
-    currentAccount.movementsDates.push(new Date().toISOString());
+      // Add movement date
+      currentAccount.movementsDates.push(new Date().toISOString());
 
-    // Update UI
-    updateUI(currentAccount);
+      // Update UI
+      updateUI(currentAccount);
+
+      // Restart timer
+      clearInterval(timer);
+      timer = startLogoutTimer();
+    }, 2500);
     inputLoanAmount.value = '';
     inputLoanAmount.blur();
   }
