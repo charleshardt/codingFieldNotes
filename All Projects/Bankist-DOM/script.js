@@ -104,6 +104,14 @@ const handleHover = function (e) {
   }
 };
 
-// Passing an 'argument' into a handler
+// Passing an "argument" into a handler
 nav.addEventListener('mouseover', handleHover.bind(0.5));
 nav.addEventListener('mouseout', handleHover.bind(1));
+
+// Sticky navigation
+const initialCoords = nav.getBoundingClientRect();
+console.log(initialCoords);
+window.addEventListener('scroll', function () {
+  if (window.scrollY > initialCoords.top) nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
+});
