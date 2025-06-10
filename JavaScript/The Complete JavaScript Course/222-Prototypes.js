@@ -37,6 +37,8 @@ jonathan.calcAge();
 // The prototype itself of the charlie object, which now has the calcAge fn.
 console.log(charlie.__proto__);
 
+// Person.prototype is not the prototype of Person, but rather the prototype of all objects created by the Person constructor.
+
 // The prototype of the object is the prototype property of the constructor function.
 console.log(charlie.__proto__ === Person.prototype);
 
