@@ -21,6 +21,8 @@ const account = {
   },
 };
 
+// Getters transform methods into properties
+
 // write the getter as if it were just a property
 console.log(account.latest);
 
