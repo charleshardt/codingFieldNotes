@@ -27,7 +27,7 @@ class PersonCl {
 
 class StudentCl extends PersonCl {
   constructor(fullName, birthYear, course) {
-    // super() always happens first because it creates this.
+    // super() always happens first because it creates `this`.
     super(fullName, birthYear);
     this.course = course;
   }
