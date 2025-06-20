@@ -1,7 +1,9 @@
 /////////////////////////////////////////////////
 // 234-Inheritance-Between-Classes-Object-create
 
-// A common opinion: the Object.create pattern is better than trying to "fake" classes in Js. There is no fooling with the `new` keyword, constructors, or prototype properties. We're just linking up objects in a logical, simple, and beautiful way.
+// ES6 classes and constuctor functions are more prevalent in the wild.
+
+// However, a common opinion is that the Object.create pattern is better than trying to "fake" classes in Js. There is no fooling with the `new` keyword, constructors, or prototype properties. We're just linking up objects in a logical, simple, and beautiful way.
 
 // Object to be prototype
 const PersonProto = {
