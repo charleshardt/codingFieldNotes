@@ -34,7 +34,7 @@ class StudentCl extends PersonCl {
 
   elevatorPitch() {
     console.log(
-      `I am ${this._fullName}. I like ${this.course}. I was born in ${this.birthYear}. Give me your business.`
+      `I am ${this._fullName}. I like ${this.course}. I was born in ${this.birthYear}. Give me a call.`
     );
   }
 
