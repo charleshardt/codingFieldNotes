@@ -41,9 +41,9 @@ class StudentCl extends PersonCl {
   // this calcAge() is shadowing the one in the parent class.
   calcAge() {
     console.log(
-      `I identify as a ${
+      `I am ${
         new Date().getFullYear() - this.birthYear
-      } year old person because that corresponds to reality.`
+      } years old.`
     );
   }
 }
