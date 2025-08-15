@@ -34,18 +34,18 @@ const wait = seconds =>
 
 wait(1)
   .then(() => {
-    console.log('I waited for 1 seconds.');
+    console.log('I waited for 1 second.');
     return wait(1);
   })
   .then(() => {
-    console.log('I waited for another second.');
+    console.log('Too easy, I waited for another second.');
     return wait(1);
   })
   .then(() => {
-    console.log('I waited for 3 seconds.');
+    console.log('I waited for 3 seconds, it\s all cool.');
     return wait(1);
   })
-  .then(() => console.log('I waited for one last second.'));
+  .then(() => console.log('No big deal, I waited for one last second.'));
 
 // That chain is way better than this callback hell:
 
