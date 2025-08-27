@@ -12,18 +12,14 @@ In 2020, when I was at the height of my powers as a concert violinist, the world
 - Book: [Eloquent JavaScript](https://eloquentjavascript.net/)
 - 28h Course: [Schmedtmann: Advanced CSS and Sass](https://www.udemy.com/course-dashboard-redirect/?course_id=1026604)
 - 84h Course: [Schmedtmann: The Ultimate React Course 2025: React, Next.js, Redux & More](https://www.udemy.com/course-dashboard-redirect/?course_id=4471614)
+- 5h Course: [Schwarzmuller: AI for Developers](https://www.udemy.com/course-dashboard-redirect/?course_id=6250531)
 
 ## Algorithms
 - [Codewars](https://www.codewars.com/dashboard): 8, 7, 6 kyu. When stuck, view answer, deconstruct it, revisit in 2 days
-- 20h Course: [Neagoie: Data Structures and Algorithms](https://www.udemy.com/course-dashboard-redirect/?course_id=1917546)
 - [Grokking Algorithms](https://www.amazon.com/dp/1633438538).
+- 20h Course: [Neagoie: Data Structures and Algorithms](https://www.udemy.com/course-dashboard-redirect/?course_id=1917546)
 - [Cracking the Code Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?sr=8-1).
 - [Leetcode](https://leetcode.com/) -- dress rehearsal for interviews. 
 
 ## Auxiliary Paths
 - 10h Course: [Schwarzmuller: Github](https://www.udemy.com/course-dashboard-redirect/?course_id=4188320)
-- 4h Course: [Elfakharany: Secure Shell Essentials](https://www.udemy.com/course-dashboard-redirect/?course_id=1735124)
-- 5h Course: [Schwarzmuller: AI for Developers](https://www.udemy.com/course-dashboard-redirect/?course_id=6250531)
-- 15h Course: [Grider: NextJS](https://www.udemy.com/course-dashboard-redirect/?course_id=5655418)
-- 12h Course: [Traversy: Tailwind CSS](https://www.udemy.com/course-dashboard-redirect/?course_id=4699780)
-- 27h Course: [Grider: TypeScript](https://www.udemy.com/course-dashboard-redirect/?course_id=2337318)
