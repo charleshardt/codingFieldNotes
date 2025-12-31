@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////
-// 295-Refactor-Bad-Code-Stage-2.js
+// 295-Refactor-Bad-Code-Stage-2
 
 const budget = Object.freeze([
   { value: 250, description: 'Sold old TV 📺', user: 'jonas' },
@@ -57,14 +57,16 @@ const checkExpenses = (state, limits) =>
 const finalBudget = checkExpenses(newBudget3, spendingLimits);
 console.log(finalBudget);
 
-const logBigExpenses = function (bigLimit) {
-  let output = '';
-  for (const entry of budget)
-    output +=
-      entry.value <= -bigLimit ? `${entry.description.slice(-2)} / ` : '';
+// Impure
+const logBigExpenses = function (state, bigLimit) {
+  const bigExpenses = state
+    .filter(entry => entry.value <= -bigLimit)
+    .map(entry => entry.description.slice(-2))
+    .join(' / ');
+  // .reduce((str, cur) => `${str} ${cur.description.slice(-2)} / `, '')
+  // .slice(0, -2);
 
-  output = output.slice(0, -2); // Remove last '/ '
-  console.log(output);
+  console.log(bigExpenses);
 };
 
-logBigExpenses(1000);
+logBigExpenses(finalBudget, 1000);
