@@ -22,5 +22,7 @@ This area organizes my notes and documents my learning path.
 - [Leetcode](https://leetcode.com/) -- dress rehearsal for interviews. 
 
 ## My Story in a Nutshell
-In 2020, when I was at the height of my powers as a concert violinist, the world shut down and they tried to lock us in our homes. I escaped, winding through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/). In 2021, they wouldn't let me go back to playing the violin because I wouldn't take their experimental shots. Reasoning that being a "dime-a-dozen" violinist is no way to live, I shook the dust off my sandals and dove into the maritime industry. Now, having worked as a commercial captain for a few years, I am returning to my original plan and steering a true course towards frontend web development.
+- 2020: at the height of my powers as a concert violinist, the world shuts down and they try to lock us in our homes. I escape, winding through [The Angela Yu Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/).
+- 2021: they won't let me go back to playing the violin because I won't take their experimental shots. So I shake the dust off my sandals, dive into the maritime industry, and work as a commercial captain.
+- 2025: Having worked as a captain for a few years, I return to my original plan: I steer a true course towards frontend web development.
 
