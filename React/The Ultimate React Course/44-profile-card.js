@@ -18,7 +18,7 @@ function Avatar() {
   return (
     <img
       className="avatar"
-      src="./recording-session-3-pigs.jpg"
+      src="./44-recording-session-3-pigs.jpg"
       alt="Charles Hardt"
     ></img>
   );
