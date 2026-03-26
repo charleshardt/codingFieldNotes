@@ -37,9 +37,8 @@ function Intro() {
     <div>
       <h1>Charles Hardt</h1>
       <p>
-        A developer that crafts seamless interfaces with clean code and a
-        curious mind. Driven by user experience and a good challenge—always one
-        refactor away from perfection.
+        A web developer that crafts clean, performant code. When not working, I
+        like playing the violin, sailing, and traveling.
       </p>
     </div>
   );
