@@ -3,11 +3,11 @@ import { createRoot } from "react-dom/client";
 import "./styles.css";
 
 const skillsData = [
-  { name: "HTML💪", level: "advanced", color: "lightgreen" },
-  { name: "CSS💪", level: "advanced", color: "yellow" },
-  { name: "JavaScript💪", level: "advanced", color: "lightblue" },
-  { name: "React💪", level: "intermediate", color: "orange" },
-  { name: "WordPress💪", level: "advanced", color: "lightgray" },
+  { name: "HTML", level: "advanced", color: "dodgerblue" },
+  { name: "CSS", level: "intermediate", color: "gold" },
+  { name: "JavaScript", level: "advanced", color: "tomato" },
+  { name: "React", level: "beginner", color: "mediumseagreen" },
+  { name: "WordPress", level: "advanced", color: "palegreen" },
 ];
 
 function App() {
@@ -50,16 +50,26 @@ function SkillList() {
   return (
     <div className="skill-list">
       {skillsData.map((skill) => (
-        <Skill skillObj={skill} key={skill.name} />
+        <Skill
+          name={skill.name}
+          level={skill.level}
+          color={skill.color}
+          key={skill.name}
+        />
       ))}
     </div>
   );
 }
 
-function Skill({ skillObj }) {
+function Skill({ name, level, color }) {
   return (
-    <div className="skill" style={{ backgroundColor: skillObj.color }}>
-      <span>{skillObj.name}</span>
+    <div className="skill" style={{ backgroundColor: color }}>
+      <span>{name}</span>
+      <span>
+        {level === "beginner" && "🐣"}
+        {level === "intermediate" && "🏃‍♂️"}
+        {level === "advanced" && "💪"}
+      </span>
     </div>
   );
 }
